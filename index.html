@@ -12,20 +12,21 @@
     <meta name="emendoza" content="emendoza">
     <!-- Open Graph Meta Data -->
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://elment9.github.io/portfolio/images/others/elizabeth.png" />
     <!--Favicon-->
-    <link rel="shortcut icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="images/favicons/favicon-16x16.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png" sizes="16x16">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icon.png">
+    <link rel="icon" type="image.png" href="images/icon.png">
+    <!-- Miniatura -->
+    <link href="images/icon.png" rel="image_src" />
     <!--Loader-->
     <link rel="stylesheet" href="css/preloader/preloader.css" type="text/css" />
     <!--Framework Styles-->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" />
-    <!--Fonts Styles-->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'> -->
     <!--Icons Styles-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -49,23 +50,28 @@
     <!--Responsive Styles-->
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="css/styleswitcher.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom-eli.css" type="text/css" />
     <!--HTML5 JS-->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 
-<body id="page" data-spy="scroll" data-target=".navbar-nav" data-offset="80" class="appear-animate">
+<body id="page" data-spy="scroll" data-target=".navbar-nav" data-offset="80" class="appear-animate" onload="init ();">
 
     <!-- Preloader
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="ip-header">
+    <div class="ip-header bgColor5">
         <div class="ip-logo">
-            <p>BIENVENID@</p>
+            <img width="180px" src="images/others/buzo.gif" alt="">
+            <!-- <p>BIENVENID@</p> -->
         </div>
-        <div class="ip-loader"> <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
-                <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
-                <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+        <div class="ip-loader">
+            <svg class="ip-inner trans" width="60px" height="60px" viewBox="0 0 80 80">
+                <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"
+                />
+                <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"
+                />
             </svg>
         </div>
     </div>
@@ -75,10 +81,19 @@
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="sidePanel">
         <div id="panelContent">
-            <h3>Descarga mi CV</h3>
+            <h3>Encuéntrame aquí</h3>
             <div id="style-changer" class="sliding-panel">
                 <ul class="list-unstyled colors-container">
-                    <li class="color-changer"> <a data-color="dark-blue" title="blue: #5355ae" style="background: #5355ae;"></a>
+                    <a href="https://www.linkedin.com/in/elizabethmendozat/" target="_blank">
+                        <i width="60px" class="icon fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.behance.net/elizabethmendozat" target="_blank">
+                        <i width="60px" class="icon fab fa-behance"></i>
+                    </a>
+                    <a href="https://www.behance.net/elizabethmendozat" target="_blank">
+                        <i width="60px" class="icon fab fa-github"></i>
+                    </a>
+                    <!-- <li class="color-changer"> <a data-color="dark-blue" title="blue: #5355ae" style="background: #5355ae;"></a>
                     </li>
                     <li class="color-changer"> <a data-color="red" title="green: #ed4343" style="background: #ed4343;"></a>
                     </li>
@@ -93,11 +108,13 @@
                     <li class="color-changer"> <a data-color="sky-blue" title="olive: #1fa3bb" style="background: #1fa3bb;"></a>
                     </li>
                     <li class="color-changer"> <a data-color="blue" title="pink: #0a59aa" style="background: #0a59aa;"></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
-        <div id="panelHandle"> <span class="fas fa-file-download"></span></div>
+        <div id="panelHandle">
+            <span class="far fa-smile-wink"></span>
+        </div>
     </div>
     <!--/ Style Changer-->
 
@@ -110,17 +127,34 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span></span> <span></span> <span></span> </button>
-                        <a class="navbar-brand overlay-header-logo" href="#home"> <img src="images/logo/logowhite.png"
-                                alt="logo" role="banner"></a> <a class="navbar-brand normal-header-logo" href="#home">
-                            <img src="images/logo/logoblack.png" alt="logo" role="banner"></a> </div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <a class="navbar-brand overlay-header-logo" href="#home">
+                            <img src="images/logo/logowhite.png" alt="logo" role="banner">
+                        </a>
+                        <a class="navbar-brand normal-header-logo" href="#home">
+                            <img src="images/logo/logoblack.png" alt="logo" role="banner">
+                        </a>
+                    </div>
                     <div class="collapse navbar-collapse navbar-right" id="navigation-menu">
                         <ul class="nav navbar-nav">
-                            <li class="active home"><a href="#home">Home</a></li>
-                            <li><a href="#about-us">About</a></li>
-                            <li><a href="#services">What I Do </a></li>
-                            <li><a href="#portfolio">Work</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li class="active home">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about-us">Sobre mí</a>
+                            </li>
+                            <li>
+                                <a href="#services">Mis habilidades</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Proyectos</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contacto</a>
+                            </li>
                             <!-- <li><a href="http://themeforest.net/item/engage-one-page-for-agency-interior-portfolio/12128981">Buy</a></li> -->
 
                         </ul>
@@ -138,19 +172,21 @@
         <div class="contentWrapper">
             <!-- Home Section
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-            <section id="home" class="mainBanner banner-2 parallax clearfix" data-background="images/slider/20.jpg">
+            <section id="home" class="mainBanner banner-2 parallax clearfix" data-background="images/others/portada.png">
                 <div class="parallax-overlay bg-strip"></div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-md-offset-2">
                             <div class="mainBanner-content text-center text-uppercase">
-                                <p>HELLO, I AM</p>
+                                <p>HOLA, SOY</p>
                                 <h1>ELIZABETH</h1>
                                 <!-- <p><span>A Freelance</span> <span id="js-rotating" data-animation="rotateInDownLeft">Designer,
                                         Developer, Consultant, Artist</span> </p> -->
                                 <p>Diseño experiencias intuitivas para transformar el mundo</p>
-                                <a href="#about-us" class="btn-bdr move marT50">GET TO KNOW MORE</a> <span class="downArrow"><img
-                                        src="images/others/down-arrow.png" alt="down arrow"></span>
+                                <a href="#about-us" class="btn-bdr move marT50">¡EMPECEMOS!</a>
+                                <span class="downArrow">
+                                    <img src="images/others/down-arrow.png" alt="down arrow">
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -167,19 +203,25 @@
                             <!--Section Title-->
                             <div class="heading wow fadeIn" data-wow-delay=".2s" data-wow-duration="1s">
                                 <div class="title-style-3">
-                                    <h2 class="text-uppercase"> About</h2>
+                                    <h2 class="text-uppercase"> Conóceme</h2>
                                     <span class="title-spt"></span>
                                 </div>
-                                <p>UX Designer por Laboratoria. Comunicadora Social con experiencia en medios, agencias
-                                    de comunicación y organizaciones del sector privado.</p>
-                                <p>Me apasiona aprender algo nuevo cada día y diseñar soluciones que puedan impactar,
-                                    de forma positiva, en la experiencia digital de las personas.</p>
-                                <p>La perseverancia, la curiosidad y la empatía me definen. Trabajo muy bien en equipo
-                                    y me adapto a diferentes situaciones. Me gusta el arte, la fotografía, los viajes y
-                                    la música.</p>
+                                <p>UX Designer y Comunicadora Social, apasionada por crear soluciones que puedan impactar en
+                                    la experiencia digital de las personas. </p>
+                                <p>La curiosidad y mis ganas de aprender algo nuevo cada día me llevaron a adentrarme en la
+                                    tecnología. Soy una persona empática y perseverante; trabajo muy bien en equipo y me
+                                    adapto a diferentes situaciones. </p>
+                                <p>Como comunicadora, cuento con experiencia en medios, agencias de comunicación y organizaciones
+                                    del sector privado. Me gusta el arte, la fotografía, los viajes y la música.</p>
                             </div>
+                            <!-- <div class="text-center progress-wrapper marT50 wow fadeIn">
+                                <a href="https://www.youtube.com/watch?v=nSJ3FtugpVI" class="cbp-caption cbp-lightbox"><input type="submit"
+                                        class="submit btn btn-dark" value="Mira mi video"></a>
+                            </div> -->
                             <div class="text-center progress-wrapper marT50 wow fadeIn">
-                                <a href="http://vimeo.com/14912890" class="cbp-caption cbp-lightbox"><input type="submit" class="submit btn btn-dark" value="Mira mi video"></a>
+                                <a target="_blank" href="https://drive.google.com/file/d/1Mizc17s3cAK_yL2QSLRsujhk1gDvgTqR/view?usp=sharing">
+                                    <input type="submit" class="submit btn btn-dark cv-btn" value="Ver mi CV">
+                                </a>
                             </div>
 
                             <!--/ Section Title-->
@@ -214,8 +256,7 @@
                     </div>
                 </div>
                 <!--Left Image-->
-                <div class="col-sm-6 hidden-xs leftAl img-holder-2 wow fadeIn" data-wow-delay=".4s" data-wow-duration=".8s"
-                    data-background="images/others/elizabeth.png"></div>
+                <div class="col-sm-6 hidden-xs leftAl img-holder-2 wow fadeIn" data-wow-delay=".4s" data-wow-duration=".8s" data-background="images/others/elizabeth.png"></div>
                 <!--/ Left Image-->
             </section>
             <!--/ About us-->
@@ -223,46 +264,54 @@
 
             <!-- Services Section
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-            <section id="services" class="bgColor3 clearfix ipad-view split">
+            <section id="services" class="parallax clearfix split" data-background="images/others/portada.png">
                 <div class="parallax-overlay bg-strip"></div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="container backDivLeft">
-                            <div class="split-section-headings pull-left">
+                        <div class="container backDivLeft bg-none">
+                            <div class="split-section-headings pull-left bg-none">
                                 <div class="row-padding">
                                     <div class="col-md-10">
-                                        <!--Section Title-->
-                                        <div class="heading wow fadeIn" data-wow-delay=".2s" data-wow-duration="1s">
-                                            <div class="title-style-3">
-                                                <h2 class="text-uppercase"> What I do</h2>
+                                        <!--Section Title text-left-->
+                                        <div class="heading text-left">
+                                            <div class="title-style-2 wow fadeIn" data-wow-delay=".2s" data-wow-duration="1s">
+                                                <div class="title white">
+                                                    <h2 class="text-uppercase white"> Habilidades</h2>
+                                                </div>
+                                                <span class="tagLine text-uppercase white"> UX /
+                                                    <br> Comunicación
+                                                </span>
                                                 <span class="title-spt"></span>
                                             </div>
-                                            <p>There are many variations of passages of lorem ipsum available, but the
-                                                majority have suffered alteration in some form, by injected humour, or
-                                                randomised.</p>
                                         </div>
-                                        <!--/ Section Title-->
+                                        <!--/ Section Title text-left-->
+                                        <p class="font20 white">Aplico el diseño estratégico para crear experiencias amigables y útiles para tus
+                                            usuarios.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="split-section-content pull-right">
                             <!--Box Listing-->
-                            <div id="services-block" class="clearfix bgColor3">
-                                <ul class="boxListing service-box">
+                            <div id="services-block" class="clearfix">
+                                <ul class="boxListing services-clr">
                                     <!--Service One-->
                                     <li class="col-sm-4 col-xs-12 boxItem">
                                         <div class="service-box-style">
-                                            <div class="content-service wow fadeIn" data-wow-delay="0.5s"
-                                                data-wow-duration=".7s">
-                                                <div class="icon ion-monitor"></div>
-                                                <h5>Web Design</h5>
+                                            <div class="content-service wow fadeIn" data-wow-delay="0.5s" data-wow-duration=".7s">
+                                                <div class="icon">
+                                                    <img src="images/skills/1.png" alt="">
+                                                </div>
+                                                <h5 class="white text-uppercase">UX RESEARCH</h5>
                                             </div>
-                                            <div class="content-hover">
+                                            <div class="content-hover black-trans">
                                                 <div class="ts-table">
                                                     <div class="ts-table-cell">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                                            sed diam nonummy nibh euismod.</p>
+                                                        <h5 class="white text-uppercase marB0">UX RESEARCH</h5>
+                                                        <span class="underline cntr white"></span>
+                                                        <p class="white">La piedra angular del diseño UX. Obtengo y analizo información de
+                                                            los usuarios y el negocio.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -272,17 +321,20 @@
                                     <!--Service Two-->
                                     <li class="col-sm-4 col-xs-12 boxItem">
                                         <div class="service-box-style">
-                                            <div class="content-service wow fadeIn" data-wow-delay="0.8s"
-                                                data-wow-duration=".7s">
-                                                <div class=""><img width="50 px" src="https://png.icons8.com/ios/1600/finn.png"
-                                                        alt=""></div>
-                                                <h5>Branding</h5>
+                                            <div class="content-service wow fadeIn" data-wow-delay="0.8s" data-wow-duration=".7s">
+                                                <div class="icon">
+                                                    <img src="images/skills/2.png" alt="">
+                                                </div>
+                                                <h5 class="white text-uppercase">Sketching & Wireframing</h5>
                                             </div>
-                                            <div class="content-hover">
+                                            <div class="content-hover black-trans">
                                                 <div class="ts-table">
                                                     <div class="ts-table-cell">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                                            sed diam nonummy nibh euismod.</p>
+                                                        <h5 class="white text-uppercase marB0">Sketching & Wireframing
+                                                        </h5>
+                                                        <span class="underline cntr white"></span>
+                                                        <p class="white">Desarrollo esquemas y bocetos que nos aproximan, de forma rápida,
+                                                            a nuestra solución.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -292,16 +344,19 @@
                                     <!--Service Three-->
                                     <li class="col-sm-4 col-xs-12 boxItem">
                                         <div class="service-box-style">
-                                            <div class="content-service wow fadeIn" data-wow-delay="1s"
-                                                data-wow-duration=".7s">
-                                                <div class="icon ion-paintbucket"></div>
-                                                <h5>Graphic Design</h5>
+                                            <div class="content-service wow fadeIn" data-wow-delay="1s" data-wow-duration=".7s">
+                                                <div class="icon">
+                                                    <img src="images/skills/3.png" alt="">
+                                                </div>
+                                                <h5 class="white text-uppercase">Prototyping & Testing</h5>
                                             </div>
-                                            <div class="content-hover">
+                                            <div class="content-hover black-trans">
                                                 <div class="ts-table">
                                                     <div class="ts-table-cell">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                                            sed diam nonummy nibh euismod.</p>
+                                                        <h5 class="white text-uppercase marB0">Prototyping & Testing
+                                                        </h5>
+                                                        <span class="underline cntr white"></span>
+                                                        <p class="white">Valido nuestras posibles soluciones con usuarios. ¡Empieza la iteración!</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -311,16 +366,19 @@
                                     <!--Service Four-->
                                     <li class="col-sm-4 col-xs-12 boxItem">
                                         <div class="service-box-style">
-                                            <div class="content-service wow fadeIn" data-wow-delay="1.2s"
-                                                data-wow-duration=".7s">
-                                                <div class="icon ion-ios-list-outline"></div>
-                                                <h5>Brochure Design</h5>
+                                            <div class="content-service wow fadeIn" data-wow-delay="1.2s" data-wow-duration=".7s">
+                                                <div class="icon">
+                                                    <img src="images/skills/4.png" alt="">
+                                                </div>
+                                                <h5 class="white text-uppercase">Visual Design</h5>
                                             </div>
-                                            <div class="content-hover">
+                                            <div class="content-hover black-trans">
                                                 <div class="ts-table">
                                                     <div class="ts-table-cell">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                                            sed diam nonummy nibh euismod.</p>
+                                                        <h5 class="white text-uppercase marB0">Visual Design</h5>
+                                                        <span class="underline cntr white"></span>
+                                                        <p class="white">Puedo crear todo tipo de material audiovisual: piezas gráficas, fotografía
+                                                            y video.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -330,16 +388,21 @@
                                     <!--Service Five-->
                                     <li class="col-sm-4 col-xs-12 boxItem">
                                         <div class="service-box-style">
-                                            <div class="content-service wow fadeIn" data-wow-delay="1.5s"
-                                                data-wow-duration=".7s">
-                                                <div class="icon ion-compose"></div>
-                                                <h5>Font Design</h5>
+                                            <div class="content-service wow fadeIn" data-wow-delay="1.5s" data-wow-duration=".7s">
+                                                <div class="icon">
+                                                    <img src="images/skills/5.png" alt="">
+                                                </div>
+                                                <h5 class="white text-uppercase">Design Thinking y Ágil</h5>
                                             </div>
-                                            <div class="content-hover">
+                                            <div class="content-hover black-trans">
                                                 <div class="ts-table">
                                                     <div class="ts-table-cell">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                                            sed diam nonummy nibh euismod.</p>
+                                                        <h5 class="white text-uppercase marB0">Design Thinking y Ágil
+                                                        </h5>
+                                                        <span class="underline cntr white"></span>
+                                                        <p class="white">En conjunto, ambas metodologías permiten trabajar en sprints para
+                                                            crear MVP tomando en cuenta las necesidades de tus usuarios.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -349,16 +412,20 @@
                                     <!--Service Six-->
                                     <li class="col-sm-4 col-xs-12 boxItem">
                                         <div class="service-box-style">
-                                            <div class="content-service wow fadeIn" data-wow-delay="1.8s"
-                                                data-wow-duration=".7s">
-                                                <div class="icon ion-ios-box-outline"></div>
-                                                <h5>Packaging Design</h5>
+                                            <div class="content-service wow fadeIn" data-wow-delay="1.8s" data-wow-duration=".7s">
+                                                <div class="icon">
+                                                    <img src="images/skills/6.png" alt="">
+                                                </div>
+                                                <h5 class="white text-uppercase">Marketing Digital</h5>
                                             </div>
-                                            <div class="content-hover">
+                                            <div class="content-hover black-trans">
                                                 <div class="ts-table">
                                                     <div class="ts-table-cell">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                                            sed diam nonummy nibh euismod.</p>
+                                                        <h5 class="white text-uppercase marB0">Marketing</h5>
+                                                        <span class="underline cntr white"></span>
+                                                        <p class="white">Analizo métricas, usuarios y contexto para crear estrategias digitales
+                                                            (Facebook,Instagram/ Seo) acorde a los objetivos de negocio.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -371,65 +438,79 @@
                         </div>
                     </div>
                 </div>
-                <!--Left Image-->
-                <div class="space-cover leftAl bgColor1 img-holder-2"> </div>
-                <!--/ Left Image-->
             </section>
-            <!--/ Services Section-->
+            <!--Services Section-->
 
 
             <!-- Parallax Section
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-            <section id="parallax-section-1" class="parallax bgColor1 clearfix">
-                <div class="container">
-                    <div class="row row-padding">
-                        <div class="col-sm-4 text-center wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".9s">
-                            <h5 class="text-uppercase">Experience</h5>
-                            <div class="counter-2">
-                                <!--Separatar-->
-                                <span class="spt-light"></span>
-                                <!-- Factor Area -->
-                                <div class="fact-number" data-to="07">
-                                    <!-- Factor -->
-                                    <div class="factor counter-value"></div>
-                                    <!-- Factor Description -->
-                                    <p class="counter-name text-uppercase">Years</p>
-                                </div>
-                                <!-- End Factor Area -->
-                            </div>
-                        </div>
-                        <div class="col-sm-4 text-center wow fadeInUp" data-wow-delay=".6s" data-wow-duration=".9s">
-                            <h5 class="text-uppercase">Rate</h5>
-                            <div class="counter-2">
-                                <!--Separatar-->
-                                <span class="spt-light"></span>
-                                <!-- Factor Area -->
-                                <div class="fact-number" data-to="18">
-                                    <!-- Factor -->
-                                    <span class="dollar font2">$</span>
-                                    <div class="factor counter-value"></div>
-                                    <!-- Factor Description -->
-                                    <p class="counter-name text-uppercase">Per Hour</p>
-                                </div>
-                                <!-- End Factor Area -->
-                            </div>
-                        </div>
-                        <div class="col-sm-4 text-center wow fadeInUp" data-wow-delay=".9s" data-wow-duration=".9s">
-                            <h5 class="text-uppercase">Work</h5>
-                            <div class="counter-2 last">
-                                <!--Separatar-->
-                                <span class="spt-light"></span>
-                                <!-- Factor Area -->
-                                <div class="fact-number" data-to="118">
-                                    <!-- Factor -->
-                                    <div class="factor counter-value"></div>
-                                    <!-- Factor Description -->
-                                    <p class="counter-name text-uppercase">Projects Done</p>
-                                </div>
-                                <!-- End Factor Area -->
+            <section id="parallax-section-1" class="bgColor1 clearfix">
+                <h3 class="text-center marT50">HERRAMIENTAS</h3>
+                <div class="col-md-6">
+                    <!--Progress bar-->
+                    <div class="col-sm-11">
+                        <div class="progress-wrapper marT50 marB50 wow fadeIn" data-wow-delay=".2s" data-wow-duration="1s">
+                            <!-- <h5 class="text-center">HERRAMIENTAS</h5> -->
+                            <div class="skills marT50">
+                                <ul class="skill-bar">
+                                    <li class="active progress">
+                                        <div class="skill-bar-wrap">
+                                            <div data-width="95" class="progress-bar text-uppercase" data-name="Figma">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="active progress">
+                                        <div class="skill-bar-wrap">
+                                            <div data-width="90" class="progress-bar text-uppercase" data-name="Marvel">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="active progress">
+                                        <div class="skill-bar-wrap">
+                                            <div data-width="90" class="progress-bar text-uppercase" data-name="Adobe Illustrator">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="active progress">
+                                        <div class="skill-bar-wrap">
+                                            <div data-width="70" class="progress-bar text-uppercase" data-name="Adobe XD">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <!--/ Progress bar-->
+                </div>
+                <div class="col-md-6">
+                    <!--Progress bar-->
+                    <div class="col-sm-11">
+                        <div class="progress-wrapper marT50 wow fadeIn" data-wow-delay=".2s" data-wow-duration="1s">
+                            <!-- <h5 class="color-1">I AM GOOD AT</h5> -->
+                            <div class="skills marT50">
+                                <ul class="skill-bar">
+                                    <li class="active progress">
+                                        <div class="skill-bar-wrap">
+                                            <div data-width="80" class="progress-bar text-uppercase" data-name="Adobe Photoshop"></div>
+                                        </div>
+                                    </li>
+                                    <li class="active progress">
+                                        <div class="skill-bar-wrap">
+                                            <div data-width="60" class="progress-bar text-uppercase" data-name="Adobe Premiere"></div>
+                                        </div>
+                                    </li>
+                                    <li class="active progress">
+                                        <div class="skill-bar-wrap">
+                                            <div data-width="40" class="progress-bar text-uppercase" data-name="Analytics">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Progress bar-->
                 </div>
             </section>
             <!--/ Parallax Section-->
@@ -443,7 +524,7 @@
                             <!--Section Title-->
                             <div class="heading wow fadeIn" data-wow-delay=".2s" data-wow-duration="1s">
                                 <div class="title-style-3">
-                                    <h2 class="text-uppercase"> Work</h2>
+                                    <h2 class="text-uppercase">PROYECTOS</h2>
                                     <span class="title-spt"></span>
                                 </div>
                             </div>
@@ -451,125 +532,262 @@
                         </div>
                         <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".7s">
                             <div id="filters-container" class="cbp-l-filters-alignRight filters-2">
-                                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> all </div>
-                                <div data-filter=".ux" class="cbp-filter-item"> UX Design </div>
-                                <div data-filter=".design" class="cbp-filter-item"> Diseño Gráfico </div>
-                                <div data-filter=".photo" class="cbp-filter-item"> Fotografía </div>
+                                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Todo
+                                    <div class="cbp-filter-counter"></div>
+                                </div>
+                                <div data-filter=".ux" class="cbp-filter-item">UX
+                                    <div class="cbp-filter-counter"></div>
+                                </div>
+                                <div data-filter=".code" class="cbp-filter-item">Código
+                                    <div class="cbp-filter-counter"></div>
+                                </div>
+                                <div data-filter=".design" class="cbp-filter-item">Diseño Gráfico
+                                    <div class="cbp-filter-counter"></div>
+                                </div>
+                                <div data-filter=".photo" class="cbp-filter-item">Foto
+                                    <div class="cbp-filter-counter"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <!--Grid Container-->
-                            <div id="portfolio-grid-container" class="cbp-l-grid-projects marT15" data-caption="overlayBottomReveal"
-                                data-animation="slideLeft" data-gaphorizontal="38" data-gapvertical="50" data-logo="images/logo/logo-black.png">
+                            <div id="portfolio-grid-container" class="cbp-l-grid-projects marT15" data-caption="overlayBottomReveal" data-animation="slideLeft"
+                                data-gaphorizontal="38" data-gapvertical="50" data-logo="images/logo/logoblack.png">
                                 <!--Project 1-->
-                                <div class="cbp-item ux"> <a href="ajax/ajax-page-image-slider.html"
-                                        class="cbp-caption cbp-singlePage">
-                                        <div class="cbp-caption-defaultWrap"> <img src="images/portfolio/1.png" alt="">
+                                <div class="cbp-item ux">
+                                    <a href="ajax/bcp.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/10.png" alt="">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignLeft">
                                                 <div class="cbp-l-caption-body">
-                                                    <div class="cbp-l-caption-title">Soul Digital</div>
-                                                    <div class="cbp-l-caption-desc">Ajax Page Single Image</div>
+                                                    <div class="cbp-l-caption-title">ABC del BCP</div>
+                                                    <div class="cbp-l-caption-desc">Rediseño UX</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> </div>
+                                    </a>
+                                </div>
                                 <!--/ Project 1-->
+                                <!--Project 1-->
+                                <!-- <div class="cbp-item ux">
+                                    <a href="ajax/tueke.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/1.png" alt="">
+                                        </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignLeft">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">TuEke Financiero</div>
+                                                    <div class="cbp-l-caption-desc">Rediseño UX</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> -->
+                                <!--/ Project 1-->
+                                <!--Project 1.0-->
+                                <div class="cbp-item ux">
+                                    <a href="ajax/tucambista.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/tc12.png" alt="">
+                                        </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignLeft">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Tu Cambista</div>
+                                                    <div class="cbp-l-caption-desc">Rediseño UX</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/ Project 1.0-->
+                                <!--Project 1.1-->
+                                <div class="cbp-item ux">
+                                    <a href="ajax/amable.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/1.1.png" alt="">
+                                        </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignLeft">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Web Corpotativa Amable</div>
+                                                    <div class="cbp-l-caption-desc">Rediseño UX</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/ Project 1.1-->
                                 <!--Project 2-->
-                                <div class="cbp-item ux"> <a href="ajax/ajax-page-image-slider.html"
-                                        class="cbp-caption cbp-singlePage">
-                                        <div class="cbp-caption-defaultWrap"> <img src="images/portfolio/2.png" alt="">
+                                <div class="cbp-item ux">
+                                    <a href="ajax/tueke.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/20.png" alt="">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignLeft">
                                                 <div class="cbp-l-caption-body">
-                                                    <div class="cbp-l-caption-title">JJ Royal</div>
-                                                    <div class="cbp-l-caption-desc">Ajax Page Slider</div>
+                                                    <div class="cbp-l-caption-title">TuEke Financiero</div>
+                                                    <div class="cbp-l-caption-desc">Rediseño UX</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> </div>
+                                    </a>
+                                </div>
                                 <!--/ Project 2-->
-                                <!--Project 3-->
-                                <div class="cbp-item ux"> <a href="ajax/ajax-page-single-video.html"
-                                        class="cbp-caption cbp-singlePage">
-                                        <div class="cbp-caption-defaultWrap"> <img src="images/portfolio/3.png" alt="">
+                                <!--Project 2-->
+                                <div class="cbp-item ux code">
+                                    <a href="ajax/fruta.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/2.png" alt="">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignLeft">
                                                 <div class="cbp-l-caption-body">
-                                                    <div class="cbp-l-caption-title">Yolo Glass</div>
-                                                    <div class="cbp-l-caption-desc">Ajax Page Video</div>
+                                                    <div class="cbp-l-caption-title">Marketplace Fruta La Grande</div>
+                                                    <div class="cbp-l-caption-desc">Diseño UX</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> </div>
+                                    </a>
+                                </div>
+                                <!--/ Project 2-->
+                                <!--Project 2.1-->
+                                <div class="cbp-item ux">
+                                    <a href="ajax/sura.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/sura.png" alt="">
+                                        </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignLeft">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Sura Aportes</div>
+                                                    <div class="cbp-l-caption-desc">Rediseño UX</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/ Project 2.1-->
+                                <!--Project 3-->
+                                <div class="cbp-item ux code">
+                                    <a href="ajax/datadashboard.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/3.png" alt="">
+                                        </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignLeft">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Datadashboard</div>
+                                                    <div class="cbp-l-caption-desc">Diseño UX & Frontend</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                                 <!--/ Project 3-->
                                 <!--Project 4-->
-                                <div class="cbp-item photo"> <a href="ajax/ajax-page-single-sound.html"
-                                        class="cbp-caption cbp-singlePage">
-                                        <div class="cbp-caption-defaultWrap"> <img src="images/portfolio/foto_1.png" alt="">
+                                <div class="cbp-item design">
+                                    <a href="https://www.behance.net/gallery/61147503/Sudamericana-de-Fibras-Propuesta-Portada-Agenda-2018" target="_blank" class="cbp-caption">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/design.jpg" alt="">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignLeft">
                                                 <div class="cbp-l-caption-body">
-                                                    <div class="cbp-l-caption-title">Energy Drink</div>
-                                                    <div class="cbp-l-caption-desc">Ajax Page Sound</div>
+                                                    <div class="cbp-l-caption-title">Agenda Sudamericana de Fibras</div>
+                                                    <div class="cbp-l-caption-desc">Diseño Gráfico</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> </div>
+                                    </a>
+                                </div>
                                 <!--/ Project 4-->
                                 <!--Project 5-->
-                                <div class="cbp-item ux"> <a href="ajax/big/5-big.jpg" class="cbp-caption cbp-lightbox">
-                                        <div class="cbp-caption-defaultWrap"> <img src="images/portfolio/4.png" alt="">
+                                <!-- <div class="cbp-item ux">
+                                    <a href="ajax/social.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/4.png" alt="">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignLeft">
                                                 <div class="cbp-l-caption-body">
-                                                    <div class="cbp-l-caption-title">Willowtree</div>
-                                                    <div class="cbp-l-caption-desc">Light Box Image</div>
+                                                    <div class="cbp-l-caption-title">Cooltural: Red Social</div>
+                                                    <div class="cbp-l-caption-desc">Diseño UX & Frontend</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> </div>
+                                    </a>
+                                </div> -->
                                 <!--/ Project 5-->
                                 <!--Project 6-->
-                                <div class="cbp-item graphic web-design"> <a href="http://vimeo.com/14912890" class="cbp-caption cbp-lightbox">
-                                        <div class="cbp-caption-defaultWrap"> <img src="images/portfolio/1.jpg" alt="">
+                                <div class="cbp-item photo">
+                                    <a href="https://www.behance.net/gallery/65073807/Fotografia-Sesiones-y-retratos" target="_blank" class="cbp-caption">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/foto_1.png" alt="">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignLeft">
                                                 <div class="cbp-l-caption-body">
-                                                    <div class="cbp-l-caption-title">Toy House</div>
-                                                    <div class="cbp-l-caption-desc">Light Box Video</div>
+                                                    <div class="cbp-l-caption-title">Retratos & Sesiones</div>
+                                                    <div class="cbp-l-caption-desc">Fotografía / Photoshop / Adobe Lightroom
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> </div>
+                                    </a>
+                                </div>
                                 <!--/ Project 6-->
                                 <!--Project 7-->
-                                <div class="cbp-item design"> <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4900333&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
-                                        class="cbp-caption cbp-lightbox">
-                                        <div class="cbp-caption-defaultWrap"> <img src="images/portfolio/design_1.png" alt="">
+                                <div class="cbp-item design">
+                                    <a href="https://www.behance.net/gallery/65064619/Diseno-Community-Manager-Escuela-Drytex-SDF" target="_blank" class="cbp-caption">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/design_1.png" alt="">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignLeft">
                                                 <div class="cbp-l-caption-body">
-                                                    <div class="cbp-l-caption-title">Chocolate Milkshake</div>
-                                                    <div class="cbp-l-caption-desc">Light Box Sound</div>
+                                                    <div class="cbp-l-caption-title">Social Media: Escuela Drytex</div>
+                                                    <div class="cbp-l-caption-desc">Diseño gráfico & Community manager
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a> </div>
+                                    </a>
+                                </div>
                                 <!--/ Project 7-->
+                                <!--Project 8-->
+                                <div class="cbp-item code">
+                                    <a href="ajax/FindFood.html" class="cbp-caption cbp-singlePage">
+                                        <div class="cbp-caption-defaultWrap">
+                                            <img src="images/portfolio/foodmap.png" alt="">
+                                        </div>
+                                        <div class="cbp-caption-activeWrap">
+                                            <div class="cbp-l-caption-alignLeft">
+                                                <div class="cbp-l-caption-body">
+                                                    <div class="cbp-l-caption-title">Find Food</div>
+                                                    <div class="cbp-l-caption-desc">Código</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/ Project 8-->
+
                             </div>
 
                             <!--Load more-->
-                            <div class="cbp-l-loadMore-button"> <a class="cbp-l-loadMore-button-link btn btn-dark" href="ajax/loadMore-3.html">
-                                    <span class="cbp-l-loadMore-button-defaultText">LOAD MORE</span> <span class="cbp-l-loadMore-button-loadingText">LOADING...</span>
-                                    <span class="cbp-l-loadMore-button-noMoreLoading">NO MORE WORKS</span> </a> </div>
+
+                            <div class="cbp-l-loadMore-button">
+                                <a class="cbp-l-loadMore-button-link btn btn-dark" href="ajax/loadMore-3.html">
+                                    <span class="cbp-l-loadMore-button-defaultText">VER MÁS</span>
+                                    <span class="cbp-l-loadMore-button-loadingText">VAMOS POR MÁS...</span>
+                                    <span class="cbp-l-loadMore-button-noMoreLoading">MORE PROJECTS ARE COMING</span>
+                                </a>
+                            </div>
                             <!--/ Load more-->
                         </div>
                     </div>
@@ -580,7 +798,7 @@
 
             <!-- Contact Section
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-            <section id="contact" class="parallax clearfix ipad-view split bgColor1" data-background="images/parallaxbg/13.jpg">
+            <section id="contact" class="parallax clearfix ipad-view split bgColor1" data-background="images/others/portada.png">
                 <div class="parallax-overlay bg-strip"></div>
                 <div class="container-fluid">
                     <div class="row">
@@ -591,84 +809,58 @@
                                         <!--Section Title-->
                                         <div class="heading wow fadeInLeft" data-wow-delay=".4s" data-wow-duration=".8s">
                                             <div class="title-style-1 title-left trans-bdr-left">
-                                                <h2 class="text-uppercase"> Contact</h2>
+                                                <h2 class="text-uppercase"> Contacto</h2>
                                                 <span class="spt"></span>
                                             </div>
-                                            <p>We are nec pellenesque nulla laoreet etuis.</p>
+                                            <p>¿Trabajamos juntos?</p>
                                         </div>
                                         <!--/ Section Title-->
                                         <ul class="infoContact wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
-                                            <li><span class="icon ion-home"></span>4435 Berkshire Circle Knoxville TN
-                                                27912</li>
-                                            <li><span class="icon ion-iphone"></span> <span class="number">879-890-9767</span></li>
-                                            <li><span class="icon ion-ios-email-outline"></span> <a href="mailto:mail@mail.com">mail@mail.com</a></li>
+                                            <li>
+                                                <span class="icon fas fa-map-marker"></span>Lima</li>
+                                            <li>
+                                                <span class="icon fas fa-envelope"></span>
+                                                <a href="mailto:mendozatenorioelizabeth@gmail.com?subject=The%20subject%20of%20the%20mail">
+                                                    <u>mendozatenorioelizabeth@gmail.com</u>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="icon fas fa-phone"></span>
+                                                <span class="number">974-931-526</span>
+                                            </li>
                                         </ul>
+                                        <a class="infoContact wow fadeInLeft" href="tel:974931526" target="_blank">
+                                            <input type="submit" class="submit btn btn-dark cv-btn" value="Llámame">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="split-section-content pull-right">
                             <div class="row-padding paddb0">
-                                <div id="contact-form" class="contact-form-wrapper contact-form-corp  wow fadeInRight"
-                                    data-wow-delay=".4s" data-wow-duration=".8s">
-                                    <!--Contact Form-->
-                                    <div class="map-overlay col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 clearfix">
-                                        <form action="php/contact.php" method="post" id="contactform" class="contact-form clearfix">
-                                            <!--Input Field-->
-                                            <div class="form-group">
-                                                <div class="visible input-group">
-                                                    <input type="text" class="form-control" id="name" name="name"
-                                                        placeholder="Name">
-                                                </div>
-                                            </div>
-                                            <!--/ Input Field-->
-                                            <!--Input Field-->
-                                            <div class="form-group">
-                                                <div class="visible input-group">
-                                                    <input type="text" class="form-control" id="email" name="email"
-                                                        placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <!--/ Input Field-->
-                                            <!--Input Field-->
-                                            <div class="form-group">
-                                                <div class="visible input-group">
-                                                    <input type="text" class="form-control" id="phone" name="phone"
-                                                        placeholder="Phone">
-                                                </div>
-                                            </div>
-                                            <!--/ Input Field-->
-                                            <div class="noMP">
-                                                <div class="col-md-8 col-sm-12">
-                                                    <!--Input Field-->
-                                                    <div class="form-group">
-                                                        <div class="visible input-group">
-                                                            <textarea class="form-control" rows="3" id="comments" name="comments"
-                                                                placeholder="Message"></textarea>
-                                                        </div>
-                                                        <!--/ Input Field-->
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-7 col-xs-9">
-                                                    <!--Input Field-->
-                                                    <div class="form-group text-right">
-                                                        <input type="submit" class="submit btn btn-dark" value="Submit">
-                                                    </div>
-                                                    <!--/ Input Field-->
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div id="contact-form" class="contact-form-wrapper contact-form-corp  wow fadeInRight" data-wow-delay=".4s" data-wow-duration=".8s">
+                                    <h3 class="white text-center font20">El primer paso es acordar una entrevista</h3>
+                                    <p class="white text-center margin-eli">Ingresa a mi calendario y elige el horario que más se ajuste a ti. Te llegará un mail
+                                        confirmando la fecha y hora, y una invitación de Google Calendar. ¡Espero verte pronto!
+                                    </p>
+                                    <a href="https://calendly.com/elizabethmendoza/conoceme" target="_blank">
+                                        <button class="text-center btn btn-dark cv-btn center-btn">
+                                            <li>
+                                                <img src="images/others/calendar.svg" alt="">
+                                            </li>
+                                        </button>
+                                    </a>
+
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
                             <!--Map Toggle Button-->
-                            <div class="switch dark">
+                            <!-- <div class="switch dark">
                                 <button class="radio"> <span class="icon ion-android-pin"></span> </button>
-                            </div>
+                            </div> -->
                             <!--/ Map Toggle Button-->
                             <!--Google Map-->
-                            <div id="googleMap" class="clearfix"></div>
+                            <!-- <div id="googleMap" class="clearfix"></div> -->
                             <!-- / Google Map-->
                         </div>
                         <!--Left Image-->
@@ -683,21 +875,37 @@
 
     <!-- Footer
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <footer class="clearfix bgColor2" id="page_footer">
+    <footer class="clearfix bgColor5" id="page_footer">
         <div class="container text-center">
             <div class="row">
-                <!--Footer Copy-->
-                <h5 class="copyright text-uppercase">COPYRIGHTS &copy; 2018 DESIGN BY ELIZABETH MENDOZA</h5>
-                <!--/ Footer Copy-->
                 <!--Footer Social Icon-->
                 <ul class="footer-socials clearfix">
-                    <li><a href="#" class="foo_social"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="foo_social"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" class="foo_social"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#" class="foo_social"><i class="fa fa-behance"></i></a></li>
-                    <li><a href="#" class="foo_social"><i class="fa fa-pinterest"></i></a></li>
+                    <!-- <li><a href="#" class="foo_social"><i class="fa fa-facebook"></i></a></li> -->
+                    <li>
+                        <a href="https://www.linkedin.com/in/elizabethmendozat/" target="_blank" class="foo_social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/elment9" class="foo_social" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/elizabethmendozat" class="foo_social" target="_blank">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@elizabethmendoza_10036" class="foo_social" target="_blank">
+                            <i class="fab fa-medium-m"></i>
+                        </a>
+                    </li>
                 </ul>
                 <!--/ Footer Social Icon-->
+                <!--Footer Copy-->
+                <h5 class="copyright text-uppercase">&copy; 2018 ELIZABETH MENDOZA</h5>
+                <!--/ Footer Copy-->
             </div>
         </div>
     </footer>

@@ -2321,7 +2321,7 @@ Other Elements Styles
 	z-index:0
 }
 .parallax-overlay.bg-strip {
-	background-image:url(../images/others/portada_1.png);
+	/* background-image:url(../images/others/portada_1.png); */
 	background-repeat:repeat
 }
 /*Morph text*/
@@ -3196,3 +3196,22 @@ width: 25px;
 	z-index: 0;
 }
 
+.margin-eli {
+	margin: 30px;
+	font: 400 16px/34px 'Raleway', sans-serif;
+}
+
+.center-btn {
+	width: 100px;
+	height: auto;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+
+@media (media) {
+.row row-padding .col-md-6 {
+	width: 100% !important;
+}
+}

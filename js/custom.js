@@ -721,7 +721,7 @@
     $window.scroll(function () {
 
         if (menuStyle == 'nav-top') {
-            if ($(".navbar").offset().top > 200) {
+            if ($(".navbar").offset().top > 150) {
                 $(".navbar-fixed-top").addClass("top-nav-collapse");
                 $(".navbar-fixed-top").removeClass("default-nav");
             } else {

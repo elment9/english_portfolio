@@ -54,6 +54,17 @@
   .hiw-item-icon {
     background-color: #59bb9d;
   }
+/*================================== About / Form ==================================*/
+  .cv-btn {
+    background: #59bb9d;
+    color: #ffffff;
+    font-weight: 400;
+    border-color: #59bb9d;
+  }
+  .cv-btn:hover {
+    border-color: #202020;
+    background-color: #202020;
+  }
   /*================================== Contact / Form ==================================*/
   .contact-form input[type="submit"],
   .notify-me input[type="submit"] {

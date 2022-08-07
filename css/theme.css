@@ -58,6 +58,11 @@
   .lh-nm {
     line-height: normal;
   }
+    /*================================== Font ==================================*/
+
+  .color-1 {
+    color: #f6f6f6;
+  }
   /*================================== Background Color scheme ==================================*/
   footer,
   section:nth-child(odd) {
@@ -67,7 +72,7 @@
     background-color: #ffffff;
   }
   .bgColor1 {
-    background-color: #f1f1f1 !important;
+    background-color: #f6f6f6 !important;
   }
   .bgColor2 {
     background-color: #ffffff !important;
@@ -78,6 +83,10 @@
   .bgColor4 {
     background-color: #f7f7f7 !important;
   }
+  .bgColor5 {
+    background-color: #59bb9d !important;
+  }
+
   .tranBgColor-1 {
     background-color: rgba(255, 255, 255, 0.9);
   }
@@ -319,12 +328,12 @@
   }
   /*================================== Footer ==================================*/
   .copyright {
-    color: #9b9b9b;
+    color: #ffffff;
     font-weight: 400;
   }
   .copyright a,
   .foo_social {
-    color: #cbcbcb;
+    color: #ffffff;
   }
   .copyright a:hover,
   .foo_social:hover {
@@ -384,7 +393,7 @@
     margin-bottom: 0;
   }
   .title-style-3 .title-spt {
-    background-color: #dfdfdf;
+    background-color: #59bb9d;
   }
   .title-style-2 .title h2,
   .title-style-2 .tagLine,
@@ -460,6 +469,7 @@
   .btn-white:focus {
     color: #363636;
   }
+  
   .submit.btn-dark:hover {
     background-color: #202020;
   }
@@ -468,8 +478,8 @@
     background-color: rgba(255, 255, 255, 0.5);
   }
   .btn-bdr {
-    border-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.5);
+    border-color: white;
+    color: white;
   }
   .btn-bdr:hover,
   .btn-bdr:focus {
@@ -480,7 +490,7 @@
   .btn-bdr,
   .cbp-l-loadMore-button .cbp-l-loadMore-button-link,
   .cbp-l-loadMore-button .cbp-l-loadMore-button-noMoreLoading {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .1em;
     font-weight: 400;
   }
@@ -777,7 +787,7 @@
   }
   .counter-2 .counter-name {
     letter-spacing: .1em;
-    font: 400 12px/25px 'Raleway', sans-serif;
+    font: 700 14px/25px 'Raleway', sans-serif
   }
   .counter-2 {
     border-color: #cccccc;
@@ -969,7 +979,7 @@
     background: rgba(3, 187, 199, 0.9);
   }
   .services-clr li:nth-child(5) .service-box-style {
-    background: rgba(245, 244, 136, 0.9);
+    background: rgba(251, 211, 65, 0.9);
   }
   .services-clr li:nth-child(2) .service-box-style {
     background: rgba(143, 215, 136, 0.9);
@@ -1145,7 +1155,7 @@
     margin: 18px 20px 20px;
   }
   .cbp-nav-pagination-item {
-    background: #ffffff;
+    background: #59bb9d;
     height: 15px;
     width: 15px;
   }
@@ -1794,12 +1804,14 @@
     color: #ffffff;
   }
   /*================================== Progress bar ==================================*/
-  .skill-bar li .skill-name,
-  .skill-bar li .percentage {
+  .skill-bar li .skill-name {
     color: #202020;
+    }
+  .skill-bar li .percentage {
+    color: #f6f6f6;
   }
   .skill-bar li .progress-bar {
-    background-color: #202020;
+    background-color: #59bb9d;
   }
   .progress {
     background-color: #f1f1f1;
